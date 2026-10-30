@@ -9,15 +9,16 @@
 </head>
 <body>
 <header><a href="./" class="mark"><img src="icon.png" alt="" width="56" height="56"></a><div><p class="app">Knock</p><h1>Privacy Policy</h1></div></header>
-<p class="updated">Last updated October 28, 2026</p>
+<p class="updated">Last updated October 30, 2026</p>
 <h2>What we store</h2>
 <p>Your email (to sign in) and your profile: name, username, the area you picked (for example "North York"), interests, and date of birth to confirm you're 18+.</p>
 <p>Your area is stored as a name plus a coarse grid square about 9 km across, used only to show you rooms from your area and the areas around it. We never store your GPS position, your address, or how far you are from anyone.</p>
 <p>Rooms you join, chat messages you send in rooms, game results, meetups you plan or answer, and the people and rooms you block or report.</p>
 <p>Reports are kept so we can review them; the person or room you report never sees who reported them.</p>
 <h2>Video and audio</h2>
-<p>Video and audio go directly between the phones in a room (peer to peer). They are not recorded or stored by Knock. If a relay server is used to get through a strict network, it only passes the encrypted stream along.</p>
-<p>Because the connection is direct, the other phones in a room (and Google's connection-setup servers, which help phones find each other) can see your device's IP address while you're connected, as with any video call. An IP address can show your rough region; it doesn't show your address.</p>
+<p>Video and audio in a room are passed between the phones by LiveKit, the video service Knock uses to connect calls. LiveKit relays the encrypted stream while you're in the room. Neither Knock nor LiveKit records or stores it.</p>
+<p>To deliver the call, LiveKit sees your device's IP address, your Knock user ID and your display name while you're connected, and keeps usage records (such as how long a call lasted), not the audio or video. The other people in the room don't see your IP address. Nothing about your location is sent to LiveKit.</p>
+<p>If the video service isn't available, a room may connect the phones directly (peer to peer) instead. Then the other phones in the room (and Google's connection-setup servers, which help phones find each other) can see your device's IP address while you're connected, as with any video call. An IP address can show your rough region; it doesn't show your address.</p>
 <h2>Your location</h2>
 <p>Location permission is optional. Knock only reads your phone's location when you tap "Use my location to pick it", once, on your phone, to choose the nearest area name. The position isn't sent anywhere precise and isn't saved.</p>
 <p>Rooms are shown in their host's area, not where the host is. Knock never shows a distance to anyone, never puts people or rooms on a map, and never says someone is "near you".</p>
@@ -26,7 +27,7 @@
 <p>A meetup's exact place is only shown to its host and to the people who said they're going. Everyone else invited sees the kind of place and the area, like "A café in North York".</p>
 <p>People you block can't see you and you can't see them.</p>
 <h2>Where it lives</h2>
-<p>Data is stored with our database provider, Supabase. We don't sell your data or show ads.</p>
+<p>Data is stored with our database provider, Supabase. Calls are relayed by LiveKit (see "Video and audio"). We don't sell your data or show ads.</p>
 <h2>Your choices</h2>
 <p>Change your area in Settings → Your area. Turn off location in iOS Settings at any time; Knock works without it. Delete your account in Settings → Delete account to remove your data.</p>
 <p>Questions, problems or something to report: email <a href="mailto:akshayanjeyakumar@gmail.com">akshayanjeyakumar@gmail.com</a>. For anything in a room, use Report.</p>
